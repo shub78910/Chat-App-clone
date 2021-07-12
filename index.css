@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  overflow-y: hidden;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.msgInputForm{
+  z-index: 1;
+  /* width: 100%; */
+  /* margin: 1rem; */
+  border-radius: 2rem;
+  border: 1px black solid;
+  /* position: fixed;
+  bottom: 0;*/
+  background-color: white; 
+  display: flex !important;
+  flex-direction: row !important;
+  text-align: center;
+  padding: 1rem;
+  color: black !important;
+}
+button{
+  cursor: pointer;
+}
+.form_input{
+  flex: 1;
+}
+.send_button{
+  flex: 0;
+}
+
+.signoutbtn{
+  margin-top: 3rem;
+}
+.message_box{
+  scroll-behavior: smooth;
+  border: 1px black solid;
+  background-color: black;
+  width: 30rem;
+  margin: auto;
+  padding: 0.5rem;
+  margin-top:1rem;
+  color: white;
+  height: 100vh;
+  padding-top: 3rem;
+  overflow-x: hidden !important;
+
+}
+.single_message{
+  padding: 0.3rem;
+  transition: ease-in 0.1s;
+}
+.single_message_sender{
+  text-align: right;
+}
+.single_message_reciever{
+  text-align: left;
+}
+.display_sender{
+  color: darkolivegreen;
+  display: block;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.msg_text_span{
+  /* background-color: black; */
+  color: white;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  display: inline-block;
+}
+.msg_text_span_sender{
+  /* width: fit-content; */
+  background-color: #262626;
+}
+.msg_text_span_reciever{
+  /* width: fit-content; */
+  background-color: black;
+  border: 1px white solid;
+}
+
+form{
+  margin-bottom: 1rem;
+}
+
+.sendimages{
+  width: 15rem;
+  height: 10rem;
+}
+
+.signInPage{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.signInPage p{
+  margin-top: 5rem;
+}
+
+.sign-in{
+  background: none;
+  border: 1px white solid;
+  color: white;
+  padding: 0.7rem;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sign-in:hover{
+  background-color: white;
+  color: black;
+  transition: ease-in 0.2s;
+}
+
+.sign-out{
+  margin-top: 3rem;
+}
+
+.scrollBottom{
+  background: none;
+  border: palegreen 1px solid;
+  color: white;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.image_and_signout{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profImage{
+  width:2rem;
+  height:2rem;
+  border-radius: 50%;
+}
+.channelName :hover{
+  color: red;
+}
+
+@media only screen and (max-width:600px) {
+  .message_box{
+    scroll-behavior: smooth;
+    border: 1px black solid;
+    background-color: black;
+    width: 20rem;
+}
+}
+
+.listOfPeople{
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.listOfPeople.active{
+  display: block;
+}
+
+.cursor{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.closebtn{
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: right;
+}
+
+.navigation{
+  text-align: left;
+}
+
+.sidebar{
+  /* display: none; */
+  transform: translateX(-320%);
+  transition: all ease-in 0.3s ;
+  background-color: #3a76f0;
+  padding: 0.4rem;
+  color: black;
+  width: 180px;
+  padding: 1rem;
+  z-index: 2;
+  position: absolute;
+  margin-top: 1rem;
+}
+.sidebar.active{
+  display: block;
+  transform: translateX(0%);
+}
+
+.channelName{
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.mainLogo{
+  margin: 2rem;
+}
+.fa{
+  cursor: pointer;
+  rotate: 90deg;
+}
+
+.options{
+  background-color: gray;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  color:black;
+  box-shadow: black 1px 2px ;
+  padding: 0.4rem;
+  z-index: 2;
+  cursor: pointer;
+}
